@@ -1,0 +1,86 @@
+<monit>
+    <server>
+        <id>some dummy id</id>
+        <incarnation>1234567890</incarnation>
+        <version>5.12</version>
+        <uptime>61111491</uptime>
+        <poll>20</poll>
+        <startdelay>0</startdelay>
+        <localhostname>somehostname.ap.hedani.net</localhostname>
+        <controlfile>/some/folder/monitrc</controlfile>
+        <httpd>
+            <address>127.0.0.1</address>
+            <port>7004</port>
+            <ssl>0</ssl>
+        </httpd>
+    </server>
+    <platform>
+        <name>Linux</name>
+        <release>2.6.32-754.9.1.el6</release>
+        <machine>x86_64</machine>
+        <cpu>4</cpu>
+        <memory>15659444</memory>
+        <swap>15659444</swap>
+    </platform>
+    <service type="7">
+        <name>telegraf</name>
+        <collected_sec>1456789</collected_sec>
+        <collected_usec>123</collected_usec>
+        <status>0</status>
+        <status_hint>0</status_hint>
+        <monitor>1</monitor>
+        <monitormode>0</monitormode>
+        <pendingaction>0</pendingaction>
+        <program>
+            <started>1234567890</started>
+            <status>0</status>
+            <output>
+                <![CDATA[[W] No PID file specified]]>
+            </output>
+        </program>
+    </service>
+    <service type="1">
+        <name>restart_trigger</name>
+        <collected_sec>1456789</collected_sec>
+        <collected_usec>123</collected_usec>
+        <status>0</status>
+        <status_hint>0</status_hint>
+        <monitor>1</monitor>
+        <monitormode>0</monitormode>
+        <pendingaction>0</pendingaction>
+        <mode>777</mode>
+        <uid>123456</uid>
+        <gid>123456</gid>
+        <timestamp>1234567890</timestamp>
+    </service>
+    <service type="5">
+        <name>hostname12345.fancyland.net</name>
+        <collected_sec>1456789</collected_sec>
+        <collected_usec>123</collected_usec>
+        <status>0</status>
+        <status_hint>0</status_hint>
+        <monitor>1</monitor>
+        <monitormode>0</monitormode>
+        <pendingaction>0</pendingaction>
+        <system>
+            <load>
+                <avg01>0.06</avg01>
+                <avg05>0.12</avg05>
+                <avg15>0.12</avg15>
+            </load>
+            <cpu>
+                <user>5.5</user>
+                <system>0.7</system>
+                <wait>0.0</wait>
+            </cpu>
+            <memory>
+                <percent>32.1</percent>
+                <kilobyte>5042160</kilobyte>
+            </memory>
+            <swap>
+                <percent>1.1</percent>
+                <kilobyte>169440</kilobyte>
+            </swap>
+        </system>
+    </service>
+</monit>
